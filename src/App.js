@@ -18,6 +18,14 @@ function App() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about-you">About You</Link></li>
       </ul>
+        <Switch>
+          <Route path="/about-you">
+            <AboutYouPage />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
     </div>
   );
 }
