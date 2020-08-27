@@ -13,11 +13,13 @@ function App() {
 
   return (
     <div>
-
+      
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about-you">About You</Link></li>
       </ul>
+      
+      <UserContext.Provider value={{firstName, setFirstName, lastName, setLastName}}>
         <Switch>
           <Route path="/about-you">
             <AboutYouPage />
@@ -26,6 +28,7 @@ function App() {
             <HomePage />
           </Route>
         </Switch>
+      </UserContext.Provider>
     </div>
   );
 }
