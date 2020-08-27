@@ -8,6 +8,9 @@ import AboutYouPage from './pages/AboutYouPage'
 import { UserContext } from './contexts/UserContext'
 
 function App() {
+  let [firstName, setFirstName] = useState("")
+  let [lastName, setLastName] = useState("")
+
   return (
     <div>
 
